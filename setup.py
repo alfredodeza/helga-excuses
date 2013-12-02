@@ -1,6 +1,6 @@
-import setuptools
+from setuptools import setup
 
-setup_params = dict(
+setup(
 	name='helga-excuses',
 	use_hg_version=True,
 	author="Alfredo Deza",
@@ -12,7 +12,6 @@ setup_params = dict(
     install_requires=[
         'BeautifulSoup',
         'requests',
-    ],
     entry_points = dict(
         helga_handlers = [
             'excuses = helga_excuses.excuses:ExcusesExtension',
