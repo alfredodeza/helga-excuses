@@ -14,8 +14,8 @@ setup(
         'requests',
     ],
     entry_points = dict(
-        helga_handlers = [
-            'excuses = helga_excuses.excuses:ExcusesExtension',
+        helga_plugins = [
+            'excuses = helga_excuses:excuses',
         ],
     ),
 )
